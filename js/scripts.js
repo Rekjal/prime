@@ -1,9 +1,9 @@
 $(document).ready(function(){
   $('#formOne').submit(function(){
     let input = $('#userString').val(); // do not remove
-    //console.log(`input:: ${input}`);
-    var  numbers = [];
+    var numbers = [];
     let keyNumbers = [];
+    let spliceArray = [];
     var primeArray = [];
 
     for(var k = 2; k <= input; k++ ){
@@ -16,9 +16,6 @@ $(document).ready(function(){
         keyNumbers.push(number);
       }
     });
-
-   //console.log(`Line:16:KeyNumbers:numbers at start:: ${keyNumbers} : ${numbers}`);
-   let spliceArray = [];
 
    for(let i = 0; i < keyNumbers.length; i++) {
      for (let j = 0; j < numbers.length; j++) {
